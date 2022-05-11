@@ -1,0 +1,7 @@
+{
+    "app_name": "SmartLMS Gamification Experiment",
+    "author": "Dinar Gareev",
+    "main_module": "src/main/python/main.py",
+    "version": "1.0.0",
+	"hidden_imports": ["PySide2.QtXml"]
+}
