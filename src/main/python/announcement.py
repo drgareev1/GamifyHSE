@@ -22,6 +22,15 @@ class Announcement(QMainWindow):
         ui_file.open(QFile.ReadOnly)
         self.ui = loader.load(ui_file, self)
         self.setCentralWidget(self.ui.centralwidget)
+        
+        self.ui.class_label.setFont(QFont("HSE Sans", 14, QFont.Bold))
+        self.ui.subject_label.setFont(QFont("HSE Sans", 12, QFont.Bold))
+        self.ui.time_passed_label.setFont(QFont("HSE Sans", 9))
+        self.ui.author_label.setFont(QFont("HSE Sans", 9))
+        self.ui.content_text.setFont(QFont("HSE Sans", 11))
+        
+        self.ui.read_button.clicked.connect(self.onClicked)
+        
         ui_file.close()
 
     def load_with_data(self, ann):
@@ -32,5 +41,4 @@ class Announcement(QMainWindow):
         self.ui.content_text.setText(ann["content"])
 
     def onClicked(self, item):
-        selected_id = self.ui.announcements_widget.currentRow()
-        print(selected_id)
+        print("Test")

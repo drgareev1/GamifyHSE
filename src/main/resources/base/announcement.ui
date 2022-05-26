@@ -58,7 +58,7 @@ color: rgb(255, 255, 255);
 border-radius: 8px;</string>
           </property>
           <property name="text">
-           <string>PushButton</string>
+           <string>Mark as Read</string>
           </property>
          </widget>
         </item>
