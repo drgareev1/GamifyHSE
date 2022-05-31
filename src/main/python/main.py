@@ -6,7 +6,7 @@ import os
 from pathlib import Path
 import sys
 
-from PySide2.QtWidgets import QApplication, QMainWindow, QTreeWidgetItem
+from PySide2.QtWidgets import QApplication, QMainWindow, QTreeWidgetItem, QMessageBox
 from PySide2.QtCore import QFile
 from PySide2.QtUiTools import QUiLoader
 from PySide2.QtGui import QFont, QFontDatabase, QPixmap, QBrush, QColor
@@ -159,9 +159,11 @@ class MainWindow(QMainWindow):
 
 
     def open_deadlines(self):
+        print("Deadlines")
         tasks = self.scraper.deadlines()
         for task in tasks:
             print(task["date"])
+        QMessageBox.about(self, "Congratulations", "All deadlines have already been closed!")
 
 
 if __name__ == "__main__":

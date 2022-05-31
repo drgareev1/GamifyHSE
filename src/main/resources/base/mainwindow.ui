@@ -140,7 +140,7 @@
              </size>
             </property>
             <property name="text">
-             <string>drgareev@edu.hse.ru</string>
+             <string></string>
             </property>
            </widget>
           </item>
@@ -178,7 +178,7 @@
              </size>
             </property>
             <property name="text">
-             <string>9lcxbPHarTr</string>
+             <string></string>
             </property>
             <property name="echoMode">
              <enum>QLineEdit::Password</enum>
